@@ -1,5 +1,6 @@
 # tmr_nano
-A Nanopore amplicon sequencing approach based on consensus sequences
+<p align="left">This is the official repository of The Mite Room Nanopore pipeline (A Nanopore amplicon sequencing approach based on consensus sequences) </p>
+
 
 <div align="center">
   <img height="200" src="https://github.com/diecasfranco/TheMiteRoom_Nanopore/blob/main/Spider-Mite_logoweb.jpg"  />
@@ -21,7 +22,6 @@ Here we show a workflow for ONT amplicon sequencing analysis:
 
 Here is the [link](https://zenodo.org/records/14930035) to download the formatted databases for the analysis
 
-<p align="left">This is the official repository of The Mite Room Nanopore pipeline.</p>
 
 Funded by 
 <div align="right">
