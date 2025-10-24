@@ -1,6 +1,8 @@
 ## From the file all.fastq we filtered it based on size 
+#16S
 vsearch --fastq_filter all.fastq --fastq_minlen 1300 --fastq_maxlen 1800 --fastqout all_16S_filtered.fastq --fastq_qmax 93
 
+#COI
 vsearch --fastq_filter all.fastq --fastq_minlen 500 --fastq_maxlen 1000 --fastqout all_COI_filtered.fastq --fastq_qmax 93
 
 # Reorientation
@@ -15,6 +17,8 @@ python3 ~/scripts/umipore.py -i all_COI_filtered_reoriented.fastq -o amplicon_CO
 
 # amplicon_sorter
 
-python3 ~/scripts/amplicon_sorter.py -i . -o amplicon_sorter_99 -sc 99 -ar -min 500 -max 850 -np 20 -maxr 58000
-
+#16S
 python3 ~/scripts/amplicon_sorter.py -i . -o amplicon_sorter_99 -sc 99 -ar -min 1300 -max 1700 -np 20 -maxr 249000
+
+#COI
+python3 ~/scripts/amplicon_sorter.py -i . -o amplicon_sorter_99 -sc 99 -ar -min 500 -max 850 -np 20 -maxr 58000
